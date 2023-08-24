@@ -108,7 +108,7 @@ const loadUsers = async(skill) => {
   const formService = d.getElementById('form-add-service')
   let userID;
   let services;
-  if(!uuid) location.href = 'login.html';
+  if(!uuid) location.href = './login.html';
 
   try {
     const response = await getCompany();

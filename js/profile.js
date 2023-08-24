@@ -68,7 +68,7 @@ const logout = () => {
   const bodyTable = d.getElementById("body-table");
   let id;
 
-  if (!uuid) location.href = "login.html";
+  if (!uuid) location.href = "./login.html";
   try {
     const profile = await getProfile();
     if (!profile.ok) console.log(profile.message);

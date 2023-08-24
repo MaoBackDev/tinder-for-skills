@@ -94,7 +94,7 @@ const loadServices = async() => {
   const bodyTable = d.getElementById("body-table");
   const formService = d.getElementById('form-add-service')
 
-  if(!uuid) location.href = 'login.html';
+  if(!uuid) location.href = './login.html';
   try {
     const response = await getCompany();
     const { company } = response;

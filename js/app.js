@@ -27,8 +27,8 @@ const uuid = localStorage.getItem('uuid') ||false;
       if(response.ok) {
         localStorage.setItem('uuid', response.uuid);
         formData.type === 'user' ? 
-        location.href = 'profile.html': 
-        location.href = 'company.html'
+        location.href = './profile.html': 
+        location.href = './company.html'
       }
     } catch (error) {
       console.log(error)
